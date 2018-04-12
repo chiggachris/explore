@@ -1,0 +1,9 @@
+<div *ngIf="player">
+  <h2>{{ player.name | uppercase }} Bio</h2>
+  <div><span>Name: </span>{{player.name}}</div>
+  <div><span>Nationality: </span>{{player.nationality}}</div>
+  <div><span>Number: </span>{{player.number}}</div>
+  <div><span>Position: </span>{{player.position}}</div>
+  <div><span>Years Active: </span>{{player.YearsActive}}</div>
+  <button (click)="goBack()">Back</button>
+</div>

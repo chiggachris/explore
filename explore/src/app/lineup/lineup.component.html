@@ -1,0 +1,35 @@
+<h3>Lineup</h3>
+<body>
+    <div class="grid grid-pad">
+      <a *ngFor="let player of strikers" class="col-1-2"
+      routerLink="/detail/{{player.number}}">
+      <div class="module player">
+        <span class="lbadge">{{player.number}}</span><h4>{{player.name}}</h4>
+      </div>
+      </a>
+    </div>
+    <div class="grid grid-pad">
+      <a *ngFor="let player of midfielders" class="col-1-4"
+      routerLink="/detail/{{player.number}}">
+      <div class="module player">
+        <span class="lbadge">{{player.number}}</span><h4>{{player.name}}</h4>
+      </div>
+      </a>
+    </div>
+    <div class="grid grid-pad">
+      <a *ngFor="let player of defenders" class="col-1-4"
+      routerLink="/detail/{{player.number}}">
+      <div class="module player">
+        <span class="lbadge">{{player.number}}</span><h4>{{player.name}}</h4>
+      </div>
+    </a>
+    </div>
+    <div class="grid grid-pad">
+      <a *ngFor="let player of GKs" class="col-1-1"
+      routerLink="/detail/{{player.number}}">
+      <div class="module player">
+        <span class="lbadge">{{player.number}}</span><h4>{{player.name}}</h4>
+      </div>
+      </a>
+    </div>
+</body>
